@@ -540,7 +540,7 @@ Define variables for these so that they can be moved freely.</p>
 <h1>Now how can we reduce the hunger level at regular intervals?</h1>
 <h3>Thre are two options</h3>
 <ul>
-<li>use millis()</li>
+<li>use <a href="https://p5js.org/reference/#/p5/millis">millis()</a></li>
 <li>use <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">setIntervals()</a></li>
 </ul>
 </section>
@@ -551,12 +551,13 @@ Define variables for these so that they can be moved freely.</p>
   color: #020202;
 }
 ;color:black;" data-size="16:9">
-<h1>H02:: update &quot;hungerValue&quot; using millis() timing.　1</h1>
-<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>1.Record the millis() value at a certain time in prevTime.
-2.Compare the difference between the current mills() value and prevTime in the draw() function.
-3.If the mills() value and prevTime are greater than the specified updateInterval value (= three seconds), execute the code.
-4.Record the millis() value in prevTime after the code is executed.
-</span></span></foreignObject></svg></code></pre>
+<h1>H02:: &quot;hungerValue&quot; using millis() timing.</h1>
+<ul>
+<li>Record the millis() value at a certain time in prevTime.</li>
+<li>Compare the difference between the current mills() value <br /> and prevTime in the draw() loop.</li>
+<li>If the mills() value and prevTime are greater than the specified updateInterval value (= three seconds), execute the code.</li>
+<li>Record the millis() value in prevTime after the code is executed.</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-color="black" data-heading-divider="2" data-style="section {
   color: #020202;

@@ -36,14 +36,14 @@ td {
 }
 
 
-/* h1 {
+h1 {
   letter-spacing: 3px;
   font-size: 1rem;
   color: #020202;
-} */
+}
 
-h1 {
-  font-family: Helvetica, Sans-Serif;
+h2, p,li {
+  font-family: Nunito, Helvetica, Sans-Serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
@@ -51,11 +51,11 @@ h1 {
   color: #020202;
 }
 
-h2, h3,p,li {
+h3 {
   font-family: Nunito, Helvetica, Sans-Serif;
   font-style: normal;
   font-variant: normal;
   font-weight: 500;
-
+  line-height: 1em;
   color: #020202;
 }

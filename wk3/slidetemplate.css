@@ -42,7 +42,16 @@ td {
   color: #020202;
 } */
 
-h1, h2, h3,p,li {
+h1 {
+  font-family: Helvetica, Sans-Serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+
+  color: #020202;
+}
+
+h2, h3,p,li {
   font-family: Nunito, Helvetica, Sans-Serif;
   font-style: normal;
   font-variant: normal;

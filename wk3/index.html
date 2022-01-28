@@ -751,13 +751,14 @@ Define variables for these so that they can be moved freely.</p>
   color: #020202;
 }
 ;color:black;" data-size="16:9">
-<h1>Update &quot;hungerLevel&quot; using <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">setIntervals()</a></h1>
+<h1>Update &quot;hungerLevel&quot; using <a href="https://www.w3schools.com/jsref/met_win_setinterval.asp">setInterval()</a></h1>
 <pre><code class="language-javascript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> <span class="hljs-keyword">let</span> prevTime = <span class="hljs-number">0</span>;
  <span class="hljs-keyword">let</span> updateInterval = <span class="hljs-number">3000</span>; <span class="hljs-comment">//every 3000ms</span>
  <span class="hljs-keyword">let</span> hungerLevel = <span class="hljs-number">100</span>;
 
   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">setup</span>(<span class="hljs-params"></span>)</span>{
-      setIntevals(updateHunger, updateInterval);
+      createCanvas(<span class="hljs-number">400</span>,<span class="hljs-number">400</span>);
+      setInteval(updateHunger, updateInterval);
   }
 
   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateHunger</span>(<span class="hljs-params"></span>)</span>{
@@ -769,7 +770,9 @@ Define variables for these so that they can be moved freely.</p>
   }
 
  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">draw</span>(<span class="hljs-params"></span>)</span>{
-    text(<span class="hljs-string">&quot;hunger: &quot;</span> + hungerLevel, <span class="hljs-number">100</span>, <span class="hljs-number">354</span>);
+    textSize(<span class="hljs-number">40</span>);
+    fill(<span class="hljs-number">0</span>);
+    text(<span class="hljs-string">&quot;hunger: &quot;</span> + hungerLevel, <span class="hljs-number">100</span>, <span class="hljs-number">100</span>);
  }
 
 </span></span></foreignObject></svg></code></pre>

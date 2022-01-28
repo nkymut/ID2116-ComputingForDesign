@@ -7,23 +7,19 @@ function normalFace () {
         . . . . .
         `)
 }
-input.onButtonPressed(Button.A, function () {
-    hunger = hunger - 1
-    if (hunger < 0) {
-        hunger = 0
-    }
-    serial.writeValue("hunger", hunger)
-})
 function sadFace () {
     basic.showIcon(IconNames.Sad)
 }
 input.onButtonPressed(Button.B, function () {
+    feed()
+})
+function feed () {
     hunger = hunger + 1
     if (hunger > 10) {
         hunger = 10
     }
     serial.writeValue("hunger", hunger)
-})
+}
 function happyFace () {
     basic.showIcon(IconNames.Happy)
 }

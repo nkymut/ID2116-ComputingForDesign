@@ -149,9 +149,9 @@ print(this.state); // undefined
 #
 <iframe src="https://editor.p5js.org/didny/full/-BJXjiDEg"></iframe>
 
-# Object Oriented Programming
+# Object Oriented Programming Principles ([Booch](https://books.google.com.sg/books/about/Object_Oriented_Analysis_and_Design_with.html?id=8Rg5wxGj818C&printsec=frontcover&source=kp_read_button&hl=en&redir_esc=y#v=onepage&q&f=false))
 ### Abstraction
-### Encapsulation
+### Encapsulation 
 ### Modularity
 ### Hierarchy
 
@@ -179,7 +179,7 @@ How can you describe the relationship of methods to properties?
 - Analyze the everyday object you brought today and extract its properties and methods.
 Write them down as a JavaScript object as the following example. 
 
-```
+```js
     objectName = {
       property: "value",
       method: function() { "type what to do" }
@@ -189,6 +189,7 @@ Write them down as a JavaScript object as the following example.
 
 # Example: A Paper
 
+```js
     paper = {
       size: A4
       owner: Yuta
@@ -197,7 +198,7 @@ Write them down as a JavaScript object as the following example.
       fold: function(time) { "fold the paper"}
       tear: function(num) { "teat the paper in to num of pices"}
     }
-
+```
 
 
 
@@ -269,4 +270,6 @@ https://editor.p5js.org/didny/sketches/aAzdj6k4
 - Coding Train: JavaScript Object
   - https://www.youtube.com/watch?v=-e5h4IGKZRY&&t=295s&ab_channel=TheCodingTrain
 
+- Object-Oriented Analysis and Design with Applications
+  - https://books.google.com.sg/books/about/Object_Oriented_Analysis_and_Design_with.html?id=8Rg5wxGj818C&printsec=frontcover&source=kp_read_button&hl=en&redir_esc=y#v=onepage&q&f=false
 

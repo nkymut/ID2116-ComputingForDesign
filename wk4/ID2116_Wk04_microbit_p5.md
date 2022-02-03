@@ -158,7 +158,7 @@ p5.js has the following data conversion functions.
 
 
 
-## Challenge:  Turn the Bulb into  a Sensor Light
+# Challenge:  Turn the Bulb into  a Sensor Light
 
 
 ### Add a conditional statement in the handleUsbData()<br>  so that the light turns on when the brightness drops below 20, and turns off when it exceeds 20.
@@ -183,6 +183,10 @@ p5.js has the following data conversion functions.
 | ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612428656797_Screenshot+2021-02-04+at+4.50.10+PM.png) | ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612485732454_Screenshot+2021-02-05+at+8.41.34+AM.png) |
 
 <!-- **JavaScript trim()** method: https://www.w3schools.com/jsref/jsref_trim_string.asp -->
+
+# Image Slideshow
+
+<iframe allow="usb" src="https://editor.p5js.org/didny/full/vRopIXHjq"> </iframe>
 
 
 ## [USB: p5.js → micro:bit] Control micro:bit LED with p5.js slider value 
@@ -209,11 +213,11 @@ p5.js has the following data conversion functions.
 
 
 
-## Handling Comma Seperated Value
+# Handling Comma Seperated Value
 
-- [split(",");](https://www.w3schools.com/jsref/jsref_split.asp) splits a string value into array of substrings
+- [split(",");](https://www.w3schools.com/jsref/jsref_split.asp) : splits a string value into array of substrings
 
-- map(val, min, max, target_min, target_max);
+- [map(val, input_min, input_max, target_min, target_max);](https://p5js.org/reference/#/p5/map) : re-map input value range to another value range. 
 
 
 
@@ -223,28 +227,29 @@ Serial communication can only send a single text, so multiple numbers need to be
 step1: read accelerometer values to variables 
  R ← X axis , G ← Y axis ,B ← Z axis   
 
-step2: join variable into a “Comma Separated  Value ” and send via Serial  
+step2: Join variables into a single line text and send via Serial  
 - Join R +“,” + G + “,” + B 
 - creates a text line “R,G,B” 
 - e.g. “128,255,1023”                                              ![bg right:30% h:400px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1582138859204_file.png)                                                                                                 |
 
   
 
-#  [p5] Split comma seperated value
+#  [p5] [split()](https://www.w3schools.com/jsref/jsref_split.asp) comma seperated value
 
 
 Step01: p5.js receives data from micro:bit as a string “R,G,B”  
 
-```
+```js
 function handleUsbData(){ 
   print(data);  // text data “600,350,800\n” 
 }
 ```
 Step02: split text string by “,”(comma) delimiter and convert text into an array of integer values. 
- ```
+
+ ```js
   values = data.split(","); // split data with comma 
-  values = int(values); //convert to number(integer)
-  print(values); // print ["600", "350", "800\n"]
+  values = int(values);     //convert to number(integer)
+  print(values);            // print ["600", "350", "800\n"]
  ```
 
 #  [p5] [map()](https://p5js.org/reference/#/p5/map) sensor data
@@ -255,7 +260,7 @@ To do this, we will use the map() function.
 **map(value, min, max, target_min, target_max)**
 
 
-```
+```js
   //map value range from microbit's accelerometer(-1023,1023) to RGB color(0,255)
   //and assign values to RGB color variables. 
   R = map(value[0],-1023,1023,0,255);

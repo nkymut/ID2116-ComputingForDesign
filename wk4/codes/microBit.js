@@ -31,8 +31,9 @@ const UART_TX_CHARACTERISTIC_UUID = "6e400002-b5a3-f393-e0a9-e50e24dcca9e";
 // Allows a connected client to send a byte array
 const UART_RX_CHARACTERISTIC_UUID = "6e400003-b5a3-f393-e0a9-e50e24dcca9e";
 
+var uBitDevice;
 
-async function connectButtonPressed() {
+async function connectBle() {
   try {
     console.log("Requesting Bluetooth Device...");
     uBitDevice = await navigator.bluetooth.requestDevice({
@@ -63,7 +64,7 @@ async function connectButtonPressed() {
   }
 }
 
-function disconnectButtonPressed() {
+function disconnectBle() {
   if (!uBitDevice) {
     return;
   }
@@ -85,7 +86,7 @@ function onTxCharacteristicValueChanged(event) {
   const receivedString = String.fromCharCode.apply(null, receivedData).replace(/\r\n|\r|\n/gm,"");
   //console.log(receivedString);
   
-  handleData(receivedString);
+  handleBleData(receivedString);
   
 }
 

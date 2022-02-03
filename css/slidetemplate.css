@@ -44,14 +44,14 @@ td {
 }
 
 
-h1 {
+h1, h2 {
   letter-spacing: 3px;
   font-size: 1rem;
   color: #020202;
   
 }
 
-h2, p,li {
+ p,li {
   font-family: Nunito, Helvetica, Sans-Serif;
   font-style: normal;
   font-variant: normal;

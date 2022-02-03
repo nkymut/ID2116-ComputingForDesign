@@ -25,11 +25,11 @@ size: 16:9
     - JavaScript Object: 
     - Class
 - Designing Behaviour of Algorithmic Agent
-    - State Transition / Finite State Machine
+    - State Transition Diagram
    
 - Connecting micro:bit ↔ p5*js 
     - Web USB
-    - BlueTooth
+    <!-- - BlueTooth -->
 
 
 # Mid-Term Project: ”Algorithmic Agent”
@@ -97,7 +97,7 @@ A value can be a text, a number, a function, an object, etc.
 
 
 ```javascript
-let fruitObj = {
+let fruit = {
   key : value, 
   name: "orange", //text
   weight: 100, //number
@@ -113,10 +113,11 @@ The properties and methods of a JavaScript object can be referred by **ObjectNam
 
 ### 
 ```javascript
-let val = fruitObj.name;          // val === "orange"
-console.log(val) // print out "orange"
+let val = fruit.name;          // val === "orange"
+console.log(val)               // print out "orange"
 
-fruitObje.weigh();         //calling weigh() method      
+fruit.weigh();         //calling fruit's weigh() method    
+
 // printout "100g"
 ```
 
@@ -145,17 +146,14 @@ print(this.state); // undefined
 
 # But why do we need to use Object?
 
+#
+<iframe src="https://editor.p5js.org/didny/full/-BJXjiDEg"></iframe>
 
 # Object Oriented Programming
 ### Abstraction
 ### Encapsulation
 ### Modularity
 ### Hierarchy
-
-#
-<iframe src="https://editor.p5js.org/didny/full/-BJXjiDEg"></iframe>
-
-
 
 
 # [JavaScript Class](https://www.w3schools.com/js/js_classes.asp) <br>A template for creating objects: 
@@ -170,9 +168,17 @@ https://editor.p5js.org/didny/sketches/ZpW_tMZ0
 
 <iframe class="p5" style="width=800px, height:800px" src="https://editor.p5js.org/didny/full/ZpW_tMZ0"></iframe>
 
+## Object02: music player
+### Let's list the properties and methods of the music player.
+How can you describe the relationship of methods to properties?
+
+![bg right h:200px](https://paper-attachments.dropbox.com/s_9E70C909006960263956C0A3D9E0398CFDF969BA8AFF813E89F24E05F6366B84_1581014907083_image.png)
+
 
 ## [Wk04 Exercise] Define a daily object as a JavaScript Object
-- Pick a simple object around you and try defining it in JavaScript Object Style.
+- Analyze the everyday object you brought today and extract its properties and methods.
+Write them down as a JavaScript object as the following example. 
+
 ```
     objectName = {
       property: "value",
@@ -181,15 +187,7 @@ https://editor.p5js.org/didny/sketches/ZpW_tMZ0
     
 ```
 
-
-## Object02: music player
-### Let's list the properties and methods of the music player.
-How can you describe the relationship of methods to properties?
-
-![bg right h:200px](https://paper-attachments.dropbox.com/s_9E70C909006960263956C0A3D9E0398CFDF969BA8AFF813E89F24E05F6366B84_1581014907083_image.png)
-
-
-# **Example: Paper**
+# Example: A Paper
 
     paper = {
       size: A4
@@ -203,7 +201,7 @@ How can you describe the relationship of methods to properties?
 
 
 
-# Designing behaviours of Objects
+# Designing Behaviours of Objects
 
 
 # State Transition / Finite State Machine

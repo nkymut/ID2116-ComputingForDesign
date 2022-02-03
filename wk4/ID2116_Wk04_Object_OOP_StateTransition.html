@@ -27,14 +27,13 @@
 <li>
 <p>Designing Behaviour of Algorithmic Agent</p>
 <ul>
-<li>State Transition / Finite State Machine</li>
+<li>State Transition Diagram</li>
 </ul>
 </li>
 <li>
 <p>Connecting micro:bit ↔ p5*js</p>
 <ul>
 <li>Web USB</li>
-<li>BlueTooth</li>
 </ul>
 </li>
 </ul>
@@ -82,7 +81,7 @@ print(bulb.state); <span class="hljs-comment">//&quot;on&quot;</span>
 <h1>JavaScript Object Notation</h1>
 <p>JavaScripts Objects are defined by key-value pairs.<br />
 A value can be a text, a number, a function, an object, etc.</p>
-<pre><code class="language-javascript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> fruitObj = {
+<pre><code class="language-javascript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> fruit = {
   <span class="hljs-attr">key</span> : value, 
   <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;orange&quot;</span>, <span class="hljs-comment">//text</span>
   <span class="hljs-attr">weight</span>: <span class="hljs-number">100</span>, <span class="hljs-comment">//number</span>
@@ -96,10 +95,11 @@ A value can be a text, a number, a function, an object, etc.</p>
 <h1>JavaScript Object: Dot Notation</h1>
 <p>The properties and methods of a JavaScript object can be referred by <strong>ObjectName.key</strong> notation which is called dot notation.</p>
 <h3></h3>
-<pre><code class="language-javascript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> val = fruitObj.name;          <span class="hljs-comment">// val === &quot;orange&quot;</span>
-<span class="hljs-built_in">console</span>.log(val) <span class="hljs-comment">// print out &quot;orange&quot;</span>
+<pre><code class="language-javascript"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">let</span> val = fruit.name;          <span class="hljs-comment">// val === &quot;orange&quot;</span>
+<span class="hljs-built_in">console</span>.log(val)               <span class="hljs-comment">// print out &quot;orange&quot;</span>
 
-fruitObje.weigh();         <span class="hljs-comment">//calling weigh() method      </span>
+fruit.weigh();         <span class="hljs-comment">//calling fruit&#x27;s weigh() method    </span>
+
 <span class="hljs-comment">// printout &quot;100g&quot;</span>
 </span></span></foreignObject></svg></code></pre>
 </section>
@@ -128,15 +128,15 @@ print(<span class="hljs-built_in">this</span>.state); <span class="hljs-comment"
 <h1>But why do we need to use Object?</h1>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
+<h1></h1>
+<iframe src="https://editor.p5js.org/didny/full/-BJXjiDEg"></iframe>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
 <h1>Object Oriented Programming</h1>
 <h3>Abstraction</h3>
 <h3>Encapsulation</h3>
 <h3>Modularity</h3>
 <h3>Hierarchy</h3>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
-<h1></h1>
-<iframe src="https://editor.p5js.org/didny/full/-BJXjiDEg"></iframe>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
 <h1><a href="https://www.w3schools.com/js/js_classes.asp">JavaScript Class</a> <br />A template for creating objects:</h1>
@@ -147,10 +147,16 @@ print(<span class="hljs-built_in">this</span>.state); <span class="hljs-comment"
 <p><a href="https://editor.p5js.org/didny/sketches/ZpW_tMZ0">https://editor.p5js.org/didny/sketches/ZpW_tMZ0</a></p>
 <iframe class="p5" style="width=800px, height:800px" src="https://editor.p5js.org/didny/full/ZpW_tMZ0"></iframe>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;--marpit-advanced-background-split:50%;" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://paper-attachments.dropbox.com/s_9E70C909006960263956C0A3D9E0398CFDF969BA8AFF813E89F24E05F6366B84_1581014907083_image.png&quot;);background-size:auto 200px;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="16" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;--marpit-advanced-background-split:50%;" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
+<h2>Object02: music player</h2>
+<h3>Let's list the properties and methods of the music player.</h3>
+<p>How can you describe the relationship of methods to properties?</p>
+</section>
+</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="color:black;" data-marpit-advanced-background="pseudo" data-size="16:9"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
 <h2>[Wk04 Exercise] Define a daily object as a JavaScript Object</h2>
 <ul>
-<li>Pick a simple object around you and try defining it in JavaScript Object Style.</li>
+<li>Analyze the everyday object you brought today and extract its properties and methods.<br />
+Write them down as a JavaScript object as the following example.</li>
 </ul>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>    objectName = {
       property: &quot;value&quot;,
@@ -159,13 +165,8 @@ print(<span class="hljs-built_in">this</span>.state); <span class="hljs-comment"
     
 </span></span></foreignObject></svg></code></pre>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;--marpit-advanced-background-split:50%;" data-size="16:9" data-marpit-advanced-background="background" data-marpit-advanced-background-split="right"><div data-marpit-advanced-background-container="true" data-marpit-advanced-background-direction="horizontal"><figure style="background-image:url(&quot;https://paper-attachments.dropbox.com/s_9E70C909006960263956C0A3D9E0398CFDF969BA8AFF813E89F24E05F6366B84_1581014907083_image.png&quot;);background-size:auto 200px;"></figure></div></section></foreignObject><foreignObject width="50%" height="720"><section id="17" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;--marpit-advanced-background-split:50%;" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="right">
-<h2>Object02: music player</h2>
-<h3>Let's list the properties and methods of the music player.</h3>
-<p>How can you describe the relationship of methods to properties?</p>
-</section>
-</foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section style="color:black;" data-marpit-advanced-background="pseudo" data-size="16:9"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
-<h1><strong>Example: Paper</strong></h1>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
+<h1>Example: A Paper</h1>
 <pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>paper = {
   size: A4
   owner: Yuta
@@ -177,7 +178,7 @@ print(<span class="hljs-built_in">this</span>.state); <span class="hljs-comment"
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
-<h1>Designing behaviours of Objects</h1>
+<h1>Designing Behaviours of Objects</h1>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-color="black" data-heading-divider="2" style="--color:black;--heading-divider:2;color:black;" data-size="16:9">
 <h1>State Transition / Finite State Machine</h1>
@@ -239,7 +240,7 @@ print(<span class="hljs-built_in">this</span>.state); <span class="hljs-comment"
 <p><a href="https://youtu.be/-e5h4IGKZRY?t=295s">https://youtu.be/-e5h4IGKZRY?t=295s</a></p>
 </section>
 <script>!function(){"use strict";const t="marpitSVGPolyfill:setZoomFactor,",e=Symbol();let r,o;function n(n){const i="object"==typeof n&&n.target||document,a="object"==typeof n?n.zoom:n;window[e]||(Object.defineProperty(window,e,{configurable:!0,value:!0}),window.addEventListener("message",(({data:e,origin:r})=>{if(r===window.origin)try{if(e&&"string"==typeof e&&e.startsWith(t)){const[,t]=e.split(","),r=Number.parseFloat(t);Number.isNaN(r)||(o=r)}}catch(t){console.error(t)}})));let l=!1;Array.from(i.querySelectorAll("svg[data-marpit-svg]"),(t=>{var e,n,i,s;t.style.transform||(t.style.transform="translateZ(0)");const c=a||o||t.currentScale||1;r!==c&&(r=c,l=c);const d=t.getBoundingClientRect(),{length:u}=t.children;for(let r=0;r<u;r+=1){const o=t.children[r],a=o.getScreenCTM();if(a){const t=null!==(n=null===(e=o.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==n?n:0,r=null!==(s=null===(i=o.y)||void 0===i?void 0:i.baseVal.value)&&void 0!==s?s:0,l=o.firstElementChild,{style:u}=l;u.transformOrigin||(u.transformOrigin=`${-t}px ${-r}px`),u.transform=`scale(${c}) matrix(${a.a}, ${a.b}, ${a.c}, ${a.d}, ${a.e-d.left}, ${a.f-d.top}) translateZ(0.0001px)`}}})),!1!==l&&Array.from(i.querySelectorAll("iframe"),(({contentWindow:e})=>{null==e||e.postMessage(`${t}${l}`,"null"===window.origin?"*":window.origin)}))}r=1,o=void 0;const i=(t,e,r)=>{if(t.getAttribute(e)!==r)return t.setAttribute(e,r),!0};function a({once:t=!1,target:e=document}={}){const r="Apple Computer, Inc."===navigator.vendor?[n]:[];let o=!t;const a=()=>{for(const t of r)t({target:e});!function(t=document){Array.from(t.querySelectorAll('svg[data-marp-fitting="svg"]'),(t=>{var e;const r=t.firstChild,o=r.firstChild,{scrollWidth:n,scrollHeight:a}=o;let l,s=1;if(t.hasAttribute("data-marp-fitting-code")&&(l=null===(e=t.parentElement)||void 0===e?void 0:e.parentElement),t.hasAttribute("data-marp-fitting-math")&&(l=t.parentElement),l){const t=getComputedStyle(l),e=Math.ceil(l.clientWidth-parseFloat(t.paddingLeft||"0")-parseFloat(t.paddingRight||"0"));e&&(s=e)}const c=Math.max(n,s),d=Math.max(a,1),u=`0 0 ${c} ${d}`;i(r,"width",`${c}`),i(r,"height",`${d}`),i(t,"preserveAspectRatio",getComputedStyle(t).getPropertyValue("--preserve-aspect-ratio")||"xMinYMin meet"),i(t,"viewBox",u)&&t.classList.toggle("__reflow__")}))}(e),o&&window.requestAnimationFrame(a)};return a(),()=>{o=!1}}const l=Symbol(),s=document.currentScript;((t=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(t[l])return t[l];const e=a({target:t}),r=()=>{e(),delete t[l]};Object.defineProperty(t,l,{configurable:!0,value:r})})(s?s.getRootNode():document)}();
-</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>Light Bulb is an Object.  
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="1" tabindex="0"><p>- BlueTooth</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>Light Bulb is an Object.  
 It has on/off state as a property.
 It has methods like switchin on or off. 
 or changing brightness or colour.</p></div><div class="bespoke-marp-note" data-index="22" tabindex="0"><p>## Example2: Traffic Light

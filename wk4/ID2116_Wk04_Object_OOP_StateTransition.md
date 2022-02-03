@@ -268,9 +268,7 @@ https://editor.p5js.org/didny/sketches/aAzdj6k4
 
 ## Reference: 
 
-Coding Train: JavaScript Object
-https://www.youtube.com/watch?v=-e5h4IGKZRY&&t=295s&ab_channel=TheCodingTrain
+- Coding Train: JavaScript Object
+  - https://www.youtube.com/watch?v=-e5h4IGKZRY&&t=295s&ab_channel=TheCodingTrain
 
-
-[https://youtu.be/-e5h4IGKZRY?t=295s](https://youtu.be/-e5h4IGKZRY?t=295s)
 

@@ -286,7 +286,7 @@ micro:bit: https://makecode.microbit.org/_hcC6eUDRY79j
 
 
 ## 
-<iframe src="https://www.dropbox.com/s/yeap6x49z5zbp58/BunnySTM.pdf?dl=0" > </iframe>
+<iframe src="./assets/BunnySTM.pdf" > </iframe>
 
 
 

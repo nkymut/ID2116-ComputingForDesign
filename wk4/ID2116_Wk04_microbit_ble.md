@@ -29,7 +29,7 @@ So here is a way to run Web Ble in p5.js with a more powerfull site for Web Deve
 
 ## Introduction of Glitch
 
-https://docs.google.com/presentation/d/1_E8rKKY8ZMXCNDFWzaJ5eAxX-I_ZdUn3CGn_n578VMc/edit?usp=sharing
+
 
 <iframe style="width:1080px; height:720px; position:static; margin-left:25px;" src="https://docs.google.com/presentation/d/1_E8rKKY8ZMXCNDFWzaJ5eAxX-I_ZdUn3CGn_n578VMc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="1200" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

@@ -300,6 +300,22 @@ https://editor.p5js.org/didny/sketches/1lPD89fXB
     - p5*js sample: https://github.com/nkymut/microbit-webusb-p5js
 - Bluetooth Library: https://antefact.github.io/microBit.js/
 
+# Challenges
+
+### Emoji Agent: https://editor.p5js.org/didny/sketches/KWquYAjGF
+
+### 1. Add the microbit USB serial communication code to the emoji agent code, and Feed the Emoji Agent.
+
+### 2. Find a way to interact with the Emoji Agent by combining the daily items you brought today with the micro:bit sensors, and try to implement it.
+
+### 3. Build a DIY sensors from the Electronics As Material module and connect it with micro:bit through pin block. 
+https://github.com/clementzheng/Electronics-As-Material
+https://makecode.microbit.org/reference/pins
+
+
+
+
+
 # References
 
 ### p5.js WebUSB library 

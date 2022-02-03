@@ -77,7 +77,7 @@ function uBitEventHandler(reason, device, data) {
     case "console":
 
       if(CONSOLE_LOG) print("Console Data: " + data.data)
-      handleData(trim(data.data));
+      handleUsbData(data.data);
       break
     case "graph-event":
       if(CONSOLE_LOG) print(`Graph Event:  ${data.data} (for ${data.graph}${data.series.length?" / series "+data.series:""})`)

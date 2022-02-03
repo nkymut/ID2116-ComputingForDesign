@@ -140,7 +140,7 @@ function handleUsbData(data){
 }
 ``` 
 
-# Data conversion in p5
+# Data conversions in p5
 
 [**int(data)**](https://p5js.org/reference/#/p5/int)  converts incoming “string” data to numerical integer value. 
 
@@ -148,10 +148,10 @@ function handleUsbData(data){
 p5.js has the following data conversion functions.
 
 
-[int()](https://p5js.org/reference/#/p5/int) : text -> integer "0" -> 0
-[float()](https://p5js.org/reference/#/p5/float) : text -> float number "0.5" -> 0.5
-[str()](https://p5js.org/reference/#/p5/float) : number -> text 0.5 -> "0.5"
-[boolean()](https://p5js.org/reference/#/p5/float) : text -> boolean "true" -> true
+[int()](https://p5js.org/reference/#/p5/int) : text to integer &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;"0" -> 0
+[float()](https://p5js.org/reference/#/p5/float) : text to float number &ensp;"0.5" -> 0.5
+[str()](https://p5js.org/reference/#/p5/float) : number to text &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;0.5 -> "0.5"
+[boolean()](https://p5js.org/reference/#/p5/float) : text to boolean &ensp;"true" -> true
 
 
 

@@ -72,7 +72,9 @@ To enable Bluetooth communication on the micro:bit click “Extentions” menu a
 ## [BLE: micro:bit → p5*js]: Control video playback with micro:bit gesture.
 
 micro:bit code: https://makecode.microbit.org/_M2oesTXdh0MH
-p5*JS code: https://editor.p5js.org/didny/sketches/
+Glitch code: https://glitch.com/edit/#!/ubit-ble-video-gesture
+Glitch preview: https://ubit-ble-video-gesture.glitch.me
+
 <!-- 
 https://www.youtube.com/watch?v=mEeEzyQEegc& -->
 
@@ -99,16 +101,16 @@ https://www.youtube.com/watch?v=_h5O4mcL8Qk&
 
 3-1. Download the micro:bit bluetooth library
       [microBit.js](https://www.dropbox.com/s/ax9z7p5sd4je3yt/microBit.js?dl=0)
+
+3-2. Remix the P5 Video Gesture project.
+https://glitch.com/edit/#!/p-5-video-gesture
     
-3-2. Upload “microBit.js” file to the sketch folder of the   
-<!-- 
-[videoPlayer example](https://editor.p5js.org/didny/sketches/Cc24B9ClW) -->
-videoPlayer code: https://editor.p5js.org/didny/sketches/Cc24B9ClW
+3-2. Upload “microBit.js” file to the sketch folder.
 
 ![bg right:30% h:300px](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612471931230_image.png)
 
 
-3-3. Add link to the library script in index.html
+3-3. Add link to the script file in index.html
 ```html
 <script src="./microBit.js"></script>
 ```
@@ -174,10 +176,10 @@ function handleBleData(data) {
 
 <!-- The **data** variable contains a “string” value sent from microbit.    [**switch(status)**](https://www.w3schools.com/js/js_switch.asp) [statement](https://www.w3schools.com/js/js_switch.asp) selects which code to be executed based on the **status** value**.**   For example      if status value is  “stable” then call video.pause() to    pause the video playback.      if status value is “right” then call video.play() to      start the video playback.  Lastly, by setting **gestureStatus to the curren status value at line 75,**  if statement at line 55 can check it that the incoming status value is not the same as the previous status value. This prevents the same command from being executed multiple times in succession.  -->
 
----
+<!-- ---
 
  **p5*js code: https://editor.p5js.org/didny/sketches/ezgKiL7g**                                                                     
-<iframe allow="bluetooth" src="https://ubit-ble-video-gesture.glitch.me/"> </iframe>
+<iframe allow="bluetooth" src="https://ubit-ble-video-gesture.glitch.me/"> </iframe> -->
 
 
 ## Step06:  connect & select your micro:bit’s **BLE ID**
@@ -185,7 +187,7 @@ https://ubit-ble-video-gesture.glitch.me/
 
 Every micro:bit has an unique **BLE ID** (e.g **gupez**) to identify which micro:bit you are connecting to.  Look up your ID for a paper inside your micro:bit kit.
 
-List of BLE ID: [DID micro:bit ID list](https://docs.google.com/spreadsheets/d/1WZxlPx14i0HU1l4Y5BEP2u_ogdIJaN11ZAGaOXhLY30/edit?usp=sharing)
+**List of BLE ID:** [DID micro:bit BLE ID list](https://docs.google.com/spreadsheets/d/1WZxlPx14i0HU1l4Y5BEP2u_ogdIJaN11ZAGaOXhLY30/edit?usp=sharing)
 
 <!-- **How to pair micro:bit via BLE**
 

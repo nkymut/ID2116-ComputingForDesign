@@ -264,18 +264,22 @@ To do this, we will use the map() function.
 ``` 
 <!-- ![bg right:60% h:300px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1582139854921_file.png)   -->
 
+## Algorithmic Agent Example (from AY2021)
+
+### GABRIELLA EDITH TAN RUI,RAIN TAY XIN YU,WONG YU TING ASHLYN 
 
 ##
 
-GABRIELLA EDITH TAN RUI,RAIN TAY XIN YU,WONG YU TING ASHLYN
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fzV1dl7LCEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ##
 
-p5js: https://editor.p5js.org/didny/sketches/O2vmLoa86
-micro:bit: https://makecode.microbit.org/_hcC6eUDRY79j
 state transition diagram:
 https://www.dropbox.com/s/yeap6x49z5zbp58/BunnySTM.pdf?dl=0
+p5js: https://editor.p5js.org/didny/sketches/O2vmLoa86
+micro:bit: https://makecode.microbit.org/_hcC6eUDRY79j
+
 
 ##
 <iframe src="https://editor.p5js.org/didny/full/O2vmLoa86"></iframe>

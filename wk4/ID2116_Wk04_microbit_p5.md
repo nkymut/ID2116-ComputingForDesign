@@ -68,7 +68,7 @@ p5*js code: https://editor.p5js.org/didny/sketches/_P18rzj9
 
 
 #
-<iframe src="https://editor.p5js.org/didny/full/_P18rzj9"> </iframe>
+<iframe allow="usb" src="https://editor.p5js.org/didny/full/_P18rzj9"> </iframe>
 
  
 ## Step 01: Load Serial_LightSensor code to micro:bit** 
@@ -196,7 +196,7 @@ p5.js has the following data conversion functions.
 
 #
 
-<iframe src="https://editor.p5js.org/didny/full/CoIoFM3B"> </iframe>
+<iframe allow="usb" src="https://editor.p5js.org/didny/full/CoIoFM3B"> </iframe>
 
 ## [micro:bit → p5*js] Sending multiple values to p5.js
 <!-- ![bg right h:300px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1582139394547_file.png) -->
@@ -205,7 +205,7 @@ p5.js has the following data conversion functions.
 **p5.js code:** https://editor.p5js.org/didny/sketches/oqxTQ1h1
 
 #
-<iframe src="https://editor.p5js.org/didny/full/oqxTQ1h1"> </iframe>
+<iframe allow="usb" src="https://editor.p5js.org/didny/full/oqxTQ1h1"> </iframe>
 
 
 
@@ -282,7 +282,7 @@ micro:bit: https://makecode.microbit.org/_hcC6eUDRY79j
 
 
 ##
-<iframe src="https://editor.p5js.org/didny/full/O2vmLoa86"></iframe>
+<iframe allow="usb" src="https://editor.p5js.org/didny/full/O2vmLoa86"></iframe>
 
 
 ## 
@@ -293,7 +293,7 @@ micro:bit: https://makecode.microbit.org/_hcC6eUDRY79j
 ## [p5.js → micro:bit] p5.js microphone Input DEMO
 
 https://editor.p5js.org/didny/sketches/1lPD89fXB
-<iframe class="p5" src="https://editor.p5js.org/didny/full/1lPD89fXB"></iframe>
+<iframe allow="usb" class="p5" src="https://editor.p5js.org/didny/full/1lPD89fXB"></iframe>
 
 ![center h:500px](./assets/1x1.png)
 
@@ -315,8 +315,6 @@ https://editor.p5js.org/didny/sketches/1lPD89fXB
 ### 3. Build a DIY sensors from the Electronics As Material module and connect it with micro:bit through pin block. 
 https://github.com/clementzheng/Electronics-As-Material
 https://makecode.microbit.org/reference/pins
-
-
 
 
 

@@ -218,9 +218,7 @@ img[alt~="center"] {
 
 # 
 ![](#000)
-![bg h:200px](https://static.wikia.nocookie.net/fantendo/images/6/67/Mario-pose2.png/revision/latest/scale-to-width-down/340?cb=20180710043809)
-![bg h:200px](https://vignette.wikia.nocookie.net/mario/images/e/e0/Fire_Mario_Artwork_-_New_Super_Mario_Bros.png/revision/latest?cb=20120324235855&format=original)
-![bg h:200px](https://paper-attachments.dropbox.com/s_71FB9903A21EBE5C87D9F8FE3F573358B8457D628E0DE7BBA9BF62CAB1ECFE22_1536210472927_file.jpeg)
+![bg w:88%](./assets/mario_transition.png)
 
 
 

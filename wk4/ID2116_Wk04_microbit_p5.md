@@ -158,10 +158,10 @@ p5.js has the following data conversion functions.
 
 
 
-## Exercise:  Turn bulb into  a Sensor Light**
-Try changing the ** handleUsbData()** function as below, 
+## Challenge:  Turn the Bulb into  a Sensor Light
 
-![](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581032662499_file.png)
+
+### Add a conditional statement in the handleUsbData()<br>  so that the light turns on when the brightness drops below 20, and turns off when it exceeds 20.
 
 
 <!-- **Send various Sensor values:**  https://makecode.microbit.org/_KJ04jUgi94zd -->

@@ -1,7 +1,7 @@
 ---
 marp: true
 headingDivider: 2
-paginate: false
+paginate: true
 markdown.marp.enableHtml: true
 
 size: 16:9
@@ -28,8 +28,8 @@ size: 16:9
     - State Transition Diagram
    
 - Connecting micro:bit ↔ p5*js 
-    - Web USB
-    <!-- - BlueTooth -->
+    - [Web USB]()
+    - [BlueTooth]()
 
 
 # Mid-Term Project: ”Algorithmic Agent”
@@ -194,9 +194,9 @@ Write them down as a JavaScript object as the following example.
       size: A4
       owner: Yuta
       color: "white"
-      draw: function(scribble) {"draw a scriblle on the paper"}
+      draw: function(scribble) {"draw a scribble on the paper"}
       fold: function(time) { "fold the paper"}
-      tear: function(num) { "teat the paper in to num of pices"}
+      tear: function(num) { "tear the paper in to num of pieces"}
     }
 ```
 
@@ -214,7 +214,7 @@ img[alt~="center"] {
 }
 </style>
 
-![h:600px center](https://uc71eb522a40d2e01945affb014d.previews.dropboxusercontent.com/p/thumb/ABZU6AaBF4o7sy-faCaM97aYmAemyK0vXuqeicHJdIDQt3d5g8zBmZyb60mLCmlgtQADpukEAzAJ807Z7gS9wcdpSKDF_1XAqdsjSwnpPFjTmlrrS1x3NjloiwyZG0GfeD1FjFyQVFsdHFHga4PoJDnCmySAAhoL3Oi1pDLOhcbrByjjGkffQeDL_mjWkh-VBKDRIE61w1OjPfUtIkfVlli4UHn80IhWtngYUL3UVF9K61IL13UAolfOD48gY7efygu4QHy3tXaifBaOU4uhFnXavQnymBjJAx_74a82Hzx0dIzcIdj3XcdT1AfPQdS9IDhqssa-hlcsD9a_beKN0QCdXffqtlBpNOyiq0rodT2_prDRxBOR0QGzoIEQeLPWykBZL00bal-twdblqSIWxv-x/p.png)
+![h:600px center](./assets/mario_object.png)
 
 
 # 

@@ -15,11 +15,14 @@ style: |
 
 
 ---
-
-
-# [BLE] Bluetooth Communication with micro:bit
+# AY2021 ID2116 Wk04:<br> micro:bit ↔ p5*js communication<br>Web BLE
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">
+
+![bg auto left:25%](https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2020-12-01/1536383585045_77e3ff5ae9fc37b361ef_132.png)
+
+# [BLE] Bluetooth Communication with micro:bit
+
 
 
 MicroBits have a bluetooth feature that allows wireless communication with laptops and mobile devices. p5.js also has a Web BLE feature that allows the browser to connect to the MicroBits for wireless communication. However, for security reasons, Web BLE is no longer available at editor.p5js.org.

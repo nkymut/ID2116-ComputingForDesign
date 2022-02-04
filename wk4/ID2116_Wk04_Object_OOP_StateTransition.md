@@ -28,8 +28,8 @@ size: 16:9
     - State Transition Diagram
    
 - Connecting micro:bit ↔ p5*js 
-    - [Web USB]()
-    - [BlueTooth]()
+    - [Web USB](https://nkymut.github.io/ID2116-AY22/wk4/ID2116_Wk04_microbit_p5.html)
+    - [BlueTooth](https://nkymut.github.io/ID2116-AY22/wk4/ID2116_Wk04_microbit_ble.html)
 
 
 # Mid-Term Project: ”Algorithmic Agent”
@@ -251,7 +251,8 @@ https://editor.p5js.org/didny/sketches/aAzdj6k4
 
 
 
-# Define and draw a state transition diagram for the Algorithm Agent
+# [Homework] Define and draw a state transition diagram for the Algorithm Agent
+
 - Brainstorm ideas for your algorithmic agent. Make sure you review the [assignment brief](https://www.notion.so/clementzheng/Assignment-1-Algorithmic-Agent-d30a2d7cd96443a791446cf623aa23cf).
 - Shortlist an idea.
 - Plan out the states and transitions for your algorithmic agent idea.

@@ -100,7 +100,7 @@ https://www.youtube.com/watch?v=_h5O4mcL8Qk&
 **microBit bluetooth library:** [microBit.js](https://www.dropbox.com/s/ax9z7p5sd4je3yt/microBit.js?dl=1)
 
 3-1. Download the micro:bit bluetooth library
-      [microBit.js](https://www.dropbox.com/s/ax9z7p5sd4je3yt/microBit.js?dl=0)
+      [microBit.js](https://www.dropbox.com/s/ax9z7p5sd4je3yt/microBit.js?dl=1)
 
 3-2. Remix the P5 Video Gesture project.
 https://glitch.com/edit/#!/p-5-video-gesture

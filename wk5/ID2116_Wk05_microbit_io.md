@@ -1,5 +1,5 @@
 ---
-marp: false
+marp: true
 headingDivider: 2
 paginate: true
 markdown.marp.enableHtml: true
@@ -120,9 +120,13 @@ https://makecode.microbit.org/reference/pins
 ---
 
 
-#   02: DIY Pressure Sensor using [Velostat](https://learn.adafruit.com/firewalker-led-sneakers/make-velostat-step-sensors)
-
+#   02: Pressure Sensor
+ 
 [Electronic As Material#Pressure Sensor](https://github.com/clementzheng/Electronics-As-Material#pressure-sensor)
+
+- [Velostat](https://learn.adafruit.com/firewalker-led-sneakers/make-velostat-step-sensors)
+
+
 
 
 ![bg right vertical fit ](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613707457706_Slide4.png)

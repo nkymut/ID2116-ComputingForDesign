@@ -535,7 +535,7 @@ function draw() {
 2. Add a following line to “index.html” to enable p5.gif.js.
 
 ```html
-    <script src="./p5.play.js"></script>
+    <script src="./p5.gif.js"></script>
 ```
 
 

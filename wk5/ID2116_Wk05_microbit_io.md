@@ -316,7 +316,7 @@ send() function sends the data as a string with new line character . <br>
 ```
 
 
-# 05 Updaing Agent state from micro:bit input
+# 05 Updating Agent states from micro:bit
 
 ---
 

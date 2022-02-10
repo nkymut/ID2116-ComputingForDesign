@@ -5,12 +5,7 @@ paginate: true
 markdown.marp.enableHtml: true
 size: 16:9
 
-style:
-h1 {
-  font-weight: 700;
-  color: 
-# 020202;
-}
+
 
 ---
 <!-- color: black -->
@@ -24,7 +19,7 @@ h1 {
 ![bg auto left:25%](https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2020-12-01/1536383585045_77e3ff5ae9fc37b361ef_132.png)
 
 
----
+
 
 #  Schedule
 
@@ -35,20 +30,22 @@ h1 {
 
 - Consultation: Algorithmic Agent Project 
 
----
+
 
 #   Materials
 
-- Crocodile Clip to Pin Cable
+- Crocodile Clip to Pin cable
+- Pin to Pin cable
 - Neopixel
 
 - Copper Tape
+- 10k Ohm Resistor  x 2 7
 - Velostat
 
 <!-- 
 ![](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613710095575_image.png) -->
 
----
+
 
 #  micro:bit GPIO pins<br>
 
@@ -59,7 +56,7 @@ GPIO x 17<br>- 2/3 reconfigurable PWM outputs<br>- Croc-clip connectors x 5<br>-
 
 ![bg right h:500](https://pxt.azureedge.net/blob/64c6ccff8e3ee82c4224874e5cacc9d0d5c60132/static/mb/device/pins-0.png)
 
----
+
 
 # micro:bit <br>Pins Blocks
 ![bg right fit](./assets/pinsblocks.png) 
@@ -67,7 +64,7 @@ GPIO x 17<br>- 2/3 reconfigurable PWM outputs<br>- Croc-clip connectors x 5<br>-
 https://makecode.microbit.org/reference/pins
 
 
----
+
 # connecting wires with micro:bit
 
 - Crocodile Clip
@@ -76,7 +73,7 @@ https://makecode.microbit.org/reference/pins
 
 ![bg right fit](./assets/crococlips.jpeg)
 
----
+
 
 #  Edge Connector + [Breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard) 
 [micro:bit extension board](https://detail.tmall.com/item.htm?id=582031537281&spm=a1z09.2.0.0.cc702e8dCcvFJ4&_u=j1lbbh1jf6d6)
@@ -85,14 +82,14 @@ https://makecode.microbit.org/reference/pins
 
 ![how to use microbit extension board](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613709012630_expansionBoard.png)
 
----
+
 
 #   [Hands-On] DIY Sensors + micro:bit
 
 
 
 
----
+
 #   01:  Button 
 
 [Electronic As Material#Button](https://github.com/clementzheng/Electronics-As-Material#Button) 
@@ -103,7 +100,7 @@ https://makecode.microbit.org/reference/pins
 
 **micro:bit code:** https://makecode.microbit.org/_4gsCV906TC2p
 
----
+
 # Digital Read / On Pressed 
 
 <!-- 
@@ -111,13 +108,13 @@ https://makecode.microbit.org/reference/pins
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ALs9iEPpjE1c" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 
----
+
 
 #  Toggle States with Button
 
 ![bg right:60% fit ](https://paper-attachments.dropbox.com/s_C8E7BE554D4DABA822B48AB944E99C6F14CF66F0F5A936722833011643E228FE_1579607061344_LED03_ToggleButton.png)
  
----
+
 
 
 #   02: Pressure Sensor
@@ -133,14 +130,14 @@ https://makecode.microbit.org/reference/pins
 ![bg fit](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613707457714_Slide5.png)
 
 
----
+
 
 ![bg  fit ](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613709258064_Slide19.png)
 
 
 ![bg fit ](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613709258116_Slide21.png)
 
----
+
 
 #  Analog Read/Write:  Variable Resistor
 
@@ -151,7 +148,7 @@ micro:bit code: https://makecode.microbit.org/_Te9VggcoWdhttps://makecode.microb
 
 
 
----
+
 # Reading sensor values at regular intervals.
 
 micro:bit code: 
@@ -210,7 +207,6 @@ https://makecode.microbit.org/_gVaijAWWcUrx
 
 
 
----
 # 03: Programmable LED Strip (Neopixel) 
 
 - [NeoPixel Tutorial](https://learn.adafruit.com/micro-bit-lesson-3-neopixels-with-micro-bit)
@@ -218,8 +214,19 @@ https://makecode.microbit.org/_gVaijAWWcUrx
 
 ![bg right fit](./assets/neopixel.jpeg)
 
----
-# 03-01 Connect NeoPixel to micro:bit:
+
+
+
+##  Enabling Neopixel extension for micro:bit
+
+- **Note: Neopixel Library cannot be used together with Bluetooth Library**. 
+<!-- https://www.youtube.com/watch?v=Z55bTWKkooQ& -->
+
+![bg fit right](./assets/neopixel.gif)
+<!-- [https://youtu.be/Z55bTWKkooQ](https://youtu.be/Z55bTWKkooQ) -->
+
+
+## 03-01 Connect NeoPixel to micro:bit:
 
 |neopixel|  micro:bit|
 | - |-|
@@ -229,10 +236,25 @@ https://makecode.microbit.org/_gVaijAWWcUrx
 
 ![bg right vertical fit ](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613639779337_image.png)  
 
----
+
+## 03-02 Neopixel Test Code
+micro:bit code: https://makecode.microbit.org/_YEhYEcd7b0aF
+
+![bg right fit](./assets/neopixel_basic.png)
 
 
-#   [p5*js → micro:bit]: Control Neopixel LED from p5.js 
+
+
+
+
+
+
+
+
+# 04 [p5*js -> micro:bit] <br>Control Neopixel Color from p5.js  
+
+
+##   04-01: sample codes
 ![bg right fit 60%](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581034097211_p5+js+Web+Editor+++webusb_SendDataRGB+2.png)
 
 
@@ -240,7 +262,8 @@ micro:bit code: https://makecode.microbit.org/83044-76777-39165-56605
 p5.js code: https://editor.p5js.org/didny/sketches/cTFjpyKd
 
 
-<!---
+
+<!-- -
 ---
 
 
@@ -248,19 +271,9 @@ p5.js code: https://editor.p5js.org/didny/sketches/cTFjpyKd
 
 ![bg  fit](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613708250183_image.png) -->
 
----
 
 
-#  Enabling Neopixel Extension for micro:bit
 
-- **Note: Neopixel Library cannot be used together with Bluetooth Library**. 
-<!-- https://www.youtube.com/watch?v=Z55bTWKkooQ& -->
-
-![bg fit right](./assets/neopixel.gif)
-<!-- [https://youtu.be/Z55bTWKkooQ](https://youtu.be/Z55bTWKkooQ) -->
-
-
----
 
 # p5*js Code:  Sending multiple values
 ![bg right fit](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581035726666_file.png)     
@@ -271,7 +284,7 @@ e.g.  if(R=127 G=127 B=127) <br>
 send() function sends the data as a string with new line character . <br>
         sendData = “127,127,127\n” 
 
----
+
 
 # micro:bit: Receiving multiple values
 
@@ -281,8 +294,8 @@ send() function sends the data as a string with new line character . <br>
 - (serial read until ‘,’) block :
  retrieve string value before the “,”  and (parse to number) converts string val to numerical value.<br>      <br>   
 
- ---
-# Decomposing messages with ReadUntil Block
+
+# Decomposing comma seperated messages 
  ```js
   Serial Buffer: “127, 127,127\n”  
 
@@ -302,6 +315,126 @@ send() function sends the data as a string with new line character . <br>
    Serial Buffer: “”   
 ```
 
+
+# 05 Updaing Agent state from micro:bit input
+
+---
+
+microbit code: 
+https://makecode.microbit.org/_RiFTMKbEcXyX
+
+p5.js code:
+https://editor.p5js.org/didny/sketches/J5QhGO9TB
+
+
+
+<iframe style="width:401px; height:470px; margin: 191px 0px 50px 60%;" src="https://editor.p5js.org/didny/full/J5QhGO9TB"></iframe>
+
+
+
+## 05-01 Handling Actions
+
+```js
+function handleUsbData(data){
+ 
+  // set incoming message to actionVal
+  let actionVal  = data.trim(); 
+  
+  print("received:", actionVal);
+
+  // check incoming action
+
+  if(actionVal == "feed"){ 
+    feed();   // call "feed" action
+  }
+
+}
+```
+
+![bg right h:200px](./assets/feed_action.png)
+
+
+## 05-02 [p5.play](https://molleindustria.github.io/p5.play/) Animation and Sprite
+
+With the [p5.play](https://molleindustria.github.io/p5.play/) library, you can easily create animatated character objects with multiple display states. 
+By loading an animation consisting of a sequence of images into a sprite object with a label, it is possible to specify the animation by label.
+
+https://molleindustria.github.io/p5.play/examples/index.html?fileName=sprite3.js
+
+---
+
+
+<iframe src="https://molleindustria.github.io/p5.play/examples/index.html?fileName=sprite3.js"></iframe>
+
+```js
+var ghost; //a sprite object
+function setup() {
+  createCanvas(800, 300);
+
+  //create a sprite and add the animations
+  ghost = createSprite(400, 150, 50, 100);
+
+  //label, first frame, last frame
+  //the addAnimation method returns the added animation
+  //that can be store in a temporary variable to change parameters
+  var myAnimation = ghost.addAnimation('floating', 'assets/ghost_standing0001.png', 'assets/ghost_standing0007.png');
+}
+
+function draw() {
+  if(ghostSate == "floating"){
+    //set "floating" animation to show
+    ghost.changeAnimation('floating');
+  }
+  //draw the sprite
+  drawSprites();
+}
+```
+<span>
+
+
+<span>
+
+
+
+
+
+## 05-03 Loading animations with p5.play 1/2
+
+1. declare variables to store p5.play animation and sprite 
+![h:100px](./assets/05-01.png)
+2. load animations using loadAmination()
+![h:100px](./assets/05-02.png)
+
+
+## 05-04 Loading animations with p5.play 2/2
+3. create a [Sprite](https://molleindustria.github.io/p5.play/docs/classes/Sprite.html) to draw a character, 
+and set animations to the sprite using "state" labels with [addAnimation()](https://molleindustria.github.io/p5.play/docs/classes/Animation.html).
+![h:100px](./assets/05-03.png)
+
+3. update sprite animation by label and display. 
+![h:200px](./assets/05-04.png)
+
+
+## Setting up [p5.play](http://molleindustria.github.io/p5.play/)
+1. Download [p5.play.js](https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js) and upload the .js file to the p5 web editor
+   
+2. Add a following line to “index.html” to enable p5.play.js.
+
+```html
+    <script src="./p5.play.js"></script>
+```
+
+## more resources on p5.play
+
+#### Making Games with p5.play
+https://creative-coding.decontextualize.com/making-games-with-p5-play/
+
+#### p5.play examples
+https://molleindustria.github.io/p5.play/examples/index.html
+
+
+
+# Resources for AA Assignment
 
 <!-- 
 ![bg fit ](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581036574396_file.png)<br><br>          
@@ -374,16 +507,48 @@ Sensor                     Output
 [Liquid Flow sensor](https://www.instructables.com/How-to-Use-Water-Flow-Sensor-Arduino-Tutorial/)                  
  -->
 
---- 
+
+# Using gif animation 
+
+### p5.gif.js library
+https://github.com/antiboredom/p5.gif.js/tree/master
+
+download: [p5.gif.js](https://raw.githubusercontent.com/antiboredom/p5.gif.js/master/p5.gif.js)
+
+```js
+var gif;
+
+function setup() {
+  createCanvas(600,600);
+  gif = loadGif('mygif.gif');
+}
+
+function draw() {
+  background(0);
+  image(gif, 0, 0);
+}
+```
+
+## Setting up [p5.gif.js](https://github.com/antiboredom/p5.gif.js/tree/master)
+1. Download [p5.gif.js](https://raw.githubusercontent.com/antiboredom/p5.gif.js/master/p5.gif.js) and upload the .js file to p5 web editor
+
+2. Add a following line to “index.html” to enable p5.gif.js.
+
+```html
+    <script src="./p5.play.js"></script>
+```
+
+
 # Touch Sensor (micro:bit v2 only)
 
 - Touch sensing on the micro:bit
 https://support.microbit.org/support/solutions/articles/19000116318-touch-sensing-on-the-micro-bit
-- Conductive Inc 
+- Touch Sensor tutorial using Conductive Paint. 
 "https://www.bareconductive.com/blogs/resources/how-to-create-a-touch-sensor-for-the-micro-bit-with-electric-paint" 
 
+![bg right ](./assets/touch.jpeg)
 
----
+
 #   Servo/Actuators
 
 - Servo:
@@ -394,7 +559,9 @@ https://support.microbit.org/support/solutions/articles/19000101864-using-a-serv
 
 ![bg right fit](https://paper-attachments.dropbox.com/s_629C5F36B245C8DCB438FA81BA2DBF731877F883F2DD373372E814C705D2C278_1582235233998_Actuators.png)
 
----
+
+
+
 
 
 #   Where to purchase electrical components / tools

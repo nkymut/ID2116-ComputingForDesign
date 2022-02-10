@@ -36,11 +36,15 @@ size: 16:9
 
 - Crocodile Clip to Pin cable
 - Pin to Pin cable
+- Pin to Socket cable
 - Neopixel
 
 - Copper Tape
 - 10k Ohm Resistor  x 2 7
 - Velostat
+
+![bg right fit](./assets/material.jpg)
+
 
 <!-- 
 ![](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613710095575_image.png) -->

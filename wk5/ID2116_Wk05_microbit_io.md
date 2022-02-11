@@ -148,7 +148,7 @@ Using the Micro:bit's built-in [pull-up and down resistor](https://makecode.micr
 
 #  Analog Read/Write:  Variable Resistor
 
-micro:bit code: https://makecode.microbit.org/_Te9VggcoWdhttps://makecode.microbit.org/_coMPRfgWc2si
+micro:bit code: https://makecode.microbit.org/_coMPRfgWc2si
 
 
 ![bg right fit](./assets/analogread.png)   

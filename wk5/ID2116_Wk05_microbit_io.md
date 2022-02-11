@@ -133,7 +133,7 @@ https://makecode.microbit.org/reference/pins
 ![bg right vertical fit ](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613707457706_Slide4.png)
 ![bg fit](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613707457714_Slide5.png)
 
-
+---
 
 
 ![bg  fit ](https://paper-attachments.dropbox.com/s_85CEAD500293F3FE66ED4D50EDA66E84F7423B5EBC75269AA2C89E9684D9656D_1613709258064_Slide19.png)

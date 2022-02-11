@@ -111,7 +111,10 @@ https://makecode.microbit.org/reference/pins
 <div style="position:relative;height:0;padding-bottom:70%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/#pub:_ALs9iEPpjE1c" frameborder="0" sandbox="allow-popups allow-forms allow-scripts allow-same-origin"></iframe></div> -->
 <div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_ALs9iEPpjE1c" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
+# Digital Read w/ Internal Pull Up/Down
+Using the Micro:bit's built-in [pull-up and down resistor](https://makecode.microbit.org/reference/pins/set-pull) functions, you can create buttons without connecting any external resistors.
 
+<div style="position:relative;height:calc(300px + 5em);width:100%;overflow:hidden;"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%;" src="https://makecode.microbit.org/---codeembed#pub:_huwHX4HUbRip" allowfullscreen="allowfullscreen" frameborder="0" sandbox="allow-scripts allow-same-origin"></iframe></div>
 
 
 #  Toggle States with Button

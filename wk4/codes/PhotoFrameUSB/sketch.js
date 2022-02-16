@@ -78,7 +78,7 @@ function prev(){
 }
 
 
-function handleData(data) {
+function handleBleData(data) {
    
     let receivedStr = data.data; //get read string value.
     let status = receivedStr.trim(); // remove New line character 
@@ -96,7 +96,7 @@ function handleData(data) {
       prev();
     
     }
-    
+  
 }
 
 

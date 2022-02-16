@@ -180,7 +180,7 @@ p5.js has the following data conversion functions.
 
 | **micro:bit code**                                                                                                                                                  | **p5.js code**                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612428656797_Screenshot+2021-02-04+at+4.50.10+PM.png) | ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612485732454_Screenshot+2021-02-05+at+8.41.34+AM.png) |
+| ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612428656797_Screenshot+2021-02-04+at+4.50.10+PM.png) | ![20%](./assets/handleUsbP5.png) |
 
 <!-- **JavaScript trim()** method: https://www.w3schools.com/jsref/jsref_trim_string.asp -->
 

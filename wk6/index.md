@@ -19,7 +19,7 @@ size: 16:9
 ![bg auto left:25%](https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2020-12-01/1536383585045_77e3ff5ae9fc37b361ef_132.png)
 
 
-## Assignment 1: Algorithmic Agent
+## Assignment 1: [Algorithmic Agent](https://www.notion.so/clementzheng/Assignment-1-Algorithmic-Agent-124c1134ed2241c8ac46a0153492e38c)
 
 Design and code an algorithmic agent using p5.js that you can interact with a micro:bit.
 
@@ -52,3 +52,9 @@ Design and code an algorithmic agent using p5.js that you can interact with a mi
 
 # Submission:
 
+### Submission Form (Due: 23:59 18/02/2022)
+https://forms.gle/yw483eaULNi2RGnB9
+- Link of video demo of algorithmic agent interactions uploaded to a streaming platform
+- Link to p5.js and micro:bit code
+- Link recording excerpt of the demo session.
+- State Transition Diagram (PDF)

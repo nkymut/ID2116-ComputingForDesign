@@ -42,13 +42,23 @@ Design and code an algorithmic agent using p5.js that you can interact with a mi
 
 -  After the demo session, we will tally them to choose the **Best projects**. 
 
-
 # Discussion
 - **Which algorithmic agent stood out in terms of their physical/visual presentation?**
 
 - **Which algorithmic agent presented clear interaction with state transition?**
 
 - **Which algorithmic agent was more “engaging”?**
+
+
+# Best(Voted) Project
+
+### Group-A: Foam Finidng
+Keng Wei & Stacy
+### Group-B: Noob Cook
+Sheryl & Grace & Ananya
+
+
+
 
 # Submission:
 

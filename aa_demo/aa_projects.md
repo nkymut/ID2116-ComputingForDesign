@@ -11,7 +11,7 @@ size: 16:9
 <!-- color: black -->
 
 
-#  AY2021 ID2116 Wk06: Algorithmic Agent Demo Day
+#  AY2022 ID2116: Algorithmic Agent Demo Day
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">

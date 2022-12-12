@@ -68,8 +68,10 @@ To enable Bluetooth communication on the micro:bit click “Extentions” menu a
   <img src="https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1580927592964_file.png" height="400px" /> 
 </p>
 
-**[SAD NEWS 😥] The Bluetooth library cannot be used in conjunction with the Neopixel or Radio libraries.**
+<!-- **[SAD NEWS 😥] The Bluetooth library cannot be used in conjunction with the Neopixel or Radio libraries.** -->
 
+# Bluetooth with Neopixel Code
+https://makecode.microbit.org/_CUadKdVArC0J
 
 
 ## [BLE: micro:bit → p5*js]: Control video playback with micro:bit gesture.

@@ -54,9 +54,12 @@ img[alt~="center"] {
 # micro:bit Serial blocks
 **https://makecode.microbit.org/reference/serial**
 
+
+ |a|a|
+ |-|-|
+ |a|a|
+
 ![h:500px center](./assets/microbit_serial.png)
-
-
 
 
 # [USB: micro:bit → p5js]:<br> Sending the light sensor value to p5*js  

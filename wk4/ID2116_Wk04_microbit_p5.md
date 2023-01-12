@@ -44,6 +44,18 @@ img[alt~="center"] {
     - [[BLE: micro:bit → p5*js]: Control video playback with micro:bit gesture.](https://paper.dropbox.com/doc/AY2021-ID2116-Wk04-microbit-p5js-l57LwqdvPUTBC8z6OcZ5b#:uid=559370689815783445110947&h2=[BLE:-micro:bit-%E2%86%92-p5*js]:-Cont)
     - [[BLE: micro:bit → p5*js]: Control Image Slideshow with micro:bit buttons](https://paper.dropbox.com/doc/AY2021-ID2116-Wk04-microbit-p5js-l57LwqdvPUTBC8z6OcZ5b#:uid=156783111641616534686400&h2=[BLE:-micro:bit-%E2%86%92-p5*js]:-Cont) -->
 
+# micro:bit ↔ p5*js communication libraries
+
+micro:bit has two communication modes, wired WebUSB and wireless WebBluetooth, and you can access them from p5.js using the following libraries.
+
+<br>
+
+|protocol|p5.js library|type
+|--|--|--|
+|WebUSB| [https://nkymut.github.io/microbit-webusb-p5js/](https://nkymut.github.io/microbit-webusb-p5js/)|Wired|
+|WebBluetooth|[https://nkymut.github.io/microbit-webble-p5js/](https://nkymut.github.io/microbit-webble-p5js/)|Wireless|
+
+
 # [WebUSB] USB Serial Communication with micro:bit
 ### → Serial Communication
 
@@ -60,6 +72,9 @@ img[alt~="center"] {
  |a|a|
 
 ![h:500px center](./assets/microbit_serial.png)
+
+# p5js WebUSB library
+[https://nkymut.github.io/microbit-webusb-p5js/](https://nkymut.github.io/microbit-webusb-p5js/)
 
 
 # [USB: micro:bit → p5js]:<br> Sending the light sensor value to p5*js  
@@ -81,67 +96,97 @@ p5*js code: https://editor.p5js.org/didny/sketches/_P18rzj9
 ![Serial Light Sensor](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1580975984582_file.png)
 
 
-## Step:02:  Load webUSB Library to the p5*js** 
+## Step:02:  Load WebUSB Library to p5*js
 
-1-1. Download the micro:bit WebUSB Library
-[https://www.dropbox.com/s/koo8v4hjf5rnwrn/ubitwebusb.js?dl=1](https://www.dropbox.com/s/koo8v4hjf5rnwrn/ubitwebusb.js?dl=1)
+<!-- 1-1. Download the micro:bit WebUSB Library
+[https://nkymut.github.io/microbit-webusb-p5js/ubitwebusb.js](https://nkymut.github.io/microbit-webusb-p5js/ubitwebusb.js)
     
 1-2. Upload “ubitwebusb.js” file to the sketch folder of [the LightBulb Code](https://editor.p5js.org/didny/sketches/lNbPXn-QZ).
 **p5js code: https://editor.p5js.org/didny/sketches/lNbPXn-QZ**
-![bg right h:300px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030482722_file.png)
 
+![bg right h:500px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030482722_file.png) -->
+
+1. Open “index.html” from Sketch Files:  and add following line above “sketch.js” link.
+This will allow p5 to use the micro:bit webusb library.
+
+```html
+  <script language="javascript" type="text/javascript" src="https://nkymut.github.io/microbit-webusb-p5js/ubitwebusb.js"></script>
+```
+
+  ![](./assets/p5-js-webusb.png)
+<!-- 
 ## Step:03:  Load webUSB Library to the p5*js** 
 
 1. Open “index.html” from Sketch Files:  and add following line above “sketch.js” link.
 This will allow p5 to use the micro:bit webusb library. 
+
 ```
 <script src="ubitwebusb.js"></script>
 ```
-![center ](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030254298_file.png)
 
-    
+![center w:1150px ](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030254298_file.png) -->
+
+## Step:03:  Setup webUSB Library
+
+ After setting up the library, instantiate a uBitWebUSB object on the micro:bit declared in the p5 global variable.
+
+```js
+  let microBit; //global variable
+
+  microBit = new uBitWebUSB(); //create microBit WebUSB instance
+```   
 
 ## Step:04:  Add “Connect”/”Disconnect” Buttons.
-4-1. Declare button objects and set properties  
+Next, create buttons for connecting/disconnecting to the micro:bit.
 
 ```js
-// Buttons to connect/disconnect to micro:bit
-let connectBtn;
-let disconnectBtn;
+/* Inside setup()*/
+//add connect button
+connectBtn = createButton("connect");
+connectBtn.mousePressed(connect);
+//add disconnect button
+disconnectBtn = createButton("disconnect");
+disconnectBtn.mousePressed(disconnect);
 ```
 
-4-2. Inside setup() function, 
-     Create Buttons to call connect/disconnect functions from ubitwebusb.js
-```js
-// function setup() {
-//   createCanvas(canvasWidth, canvasHeight);
+## Step:05:  Add “Connect”/”Disconnect” callback functions.
 
- //add connect button
-  connectBtn = createButton("connect");
-  connectBtn.mousePressed(connect);
-  //add disconnect button
-  disconnectBtn = createButton("disconnect");
-  disconnectBtn.mousePressed(disconnect);
-  
+```js
+/* somewhere in the sketch */
+//connect to microBit
+function connect() {
+  microBit.connectDevice();
+}
+
+//disconnect from microBit
+function disconnect() {
+  microBit.disconnectDevice();
+}
+
 ```
 <!-- 
 ![](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030545249_file.png) -->
 
 
-## Step:05:  Add   handleUsbData() function to handle incoming data from micro:bit
+## Step:05:  Add callback function to handle incoming data from micro:bit
 
- handleUsbData event function is called when the p5 sketch received data from microbit. 
+-`microBit.onReceiveSerial()` sets what to do when data is received from the micro:bit via Serial communication.
+
+The code below sets the light sensor data received vis UART to the brightness value of the bulb object.
+
 
 ```js
-// USB Serial Event Callback function
-function handleUsbData(data){
-  print("data:",data);
-  let val = int(data); //convert to number
-  bulb.brightness = val;
-  
-  fadeSlider.value(bulb.brightness);
-}
-``` 
+
+  microBit.onReceiveSerial( // set receive Serial callback
+    function(receivedData) {　
+      let val = int(receivedData); //convert the received text to a number
+      bulb.brightness = val; //change bulb brightness
+    
+      fadeSlider.value(bulb.brightness); //display brightness on fader
+    }
+  );
+
+```
 
 # Data conversions in p5
 
@@ -243,7 +288,7 @@ step2: Join variables into a single line text and send via Serial
 Step01: p5.js receives data from micro:bit as a string “R,G,B”  
 
 ```js
-function handleUsbData(){ 
+function handleData(data){ 
   print(data);  // text data “600,350,800\n” 
 }
 ```
@@ -252,7 +297,7 @@ Step02: split text string by “,”(comma) delimiter and convert text into an a
  ```js
   values = data.split(","); // split data with comma 
   values = int(values);     //convert to number(integer)
-  print(values);            // print ["600", "350", "800\n"]
+  print(values);            // print ["600", "350", "800"]
  ```
 
 #  [p5] [map()](https://p5js.org/reference/#/p5/map) sensor data
@@ -298,19 +343,19 @@ micro:bit: https://makecode.microbit.org/_hcC6eUDRY79j
 
 
 
-## [p5.js → micro:bit] p5.js microphone Input DEMO
+<!-- ## [p5.js → micro:bit] p5.js microphone Input DEMO
 
 https://editor.p5js.org/didny/sketches/1lPD89fXB
 <iframe allow="usb" class="p5" src="https://editor.p5js.org/didny/full/1lPD89fXB"></iframe>
 
-![center h:500px](./assets/1x1.png)
+![center h:500px](./assets/1x1.png) -->
 
 
 
-# p5*js Communication libraries: 
+<!-- # p5*js Communication libraries: 
 - WebUSB Library:  https://github.com/bsiever/microbit-webusb
     - p5*js sample: https://github.com/nkymut/microbit-webusb-p5js
-- Bluetooth Library: https://antefact.github.io/microBit.js/
+- Bluetooth Library: https://antefact.github.io/microBit.js/ -->
 
 # Challenges
 
@@ -332,6 +377,8 @@ https://makecode.microbit.org/reference/pins
 https://github.com/bsiever/microbit-webusb
 
 **sample codes  https://github.com/nkymut/microbit-webusb-p5js**
+
+### 
 
 <!--     
 # Assignments:

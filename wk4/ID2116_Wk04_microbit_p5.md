@@ -168,7 +168,7 @@ function disconnect() {
 ![](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030545249_file.png) -->
 
 
-## Step:05:  Add callback function to handle incoming data from micro:bit
+## Step:06:  Add callback function to handle incoming data from micro:bit
 
 -`microBit.onReceiveSerial()` sets what to do when data is received from the micro:bit via Serial communication.
 
@@ -209,7 +209,7 @@ p5.js has the following data conversion functions.
 # Challenge:  Turn the Bulb into  a Sensor Light
 
 
-### Add a conditional statement in the handleUsbData()<br>  so that the light turns on when the brightness drops below 20, and turns off when it exceeds 20.
+### Add a conditional statement in the handleData()<br>  so that the light turns on when the brightness drops below 20, and turns off when it exceeds 20.
 
 
 <!-- **Send various Sensor values:**  https://makecode.microbit.org/_KJ04jUgi94zd -->

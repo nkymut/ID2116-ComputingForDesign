@@ -15,7 +15,7 @@ style: |
 
 
 ---
-# AY2021 ID2116 Wk04:<br> micro:bit ↔ p5*js communication<br>Web BLE
+# AY2021 ID2116 Wk04:<br> micro:bit ↔ p5*js communication<br>Web Bluetooth
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">
 
@@ -24,11 +24,15 @@ style: |
 # [BLE] Bluetooth Communication with micro:bit
 
 
+MicroBits have a bluetooth feature that allows wireless communication with laptops and mobile devices. [Web Bluetooth library]([https://nkymut.github.io/microbit-webble-p5js/](https://nkymut.github.io/microbit-webble-p5js/)) allows  allows p5.js sketches to connect to the MicroBits via Web browser. 
 
-MicroBits have a bluetooth feature that allows wireless communication with laptops and mobile devices. p5.js also has a Web BLE feature that allows the browser to connect to the MicroBits for wireless communication. However, for security reasons, Web BLE is no longer available at editor.p5js.org.
 
-
+# 
+However, for security reasons, Web Bluetooth is currently only available on Chrome
+no longer available at editor.p5js.org.
 So here is a way to run Web Ble in p5.js with a more powerfull site for Web Developers called Glitch.
+
+
 
 ## Introduction of Glitch
 
@@ -50,11 +54,12 @@ So here is a way to run Web Ble in p5.js with a more powerfull site for Web Deve
 ## Bluetooth UART (Serial) Service
 
 ![bg h:600px right ](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581040947407_file.png) 
+
 ## Bluetooth Services
 ![bg right h:600px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581041252227_file.png) 
-## Bluetooth Beacon Service
-![bg right:70% h:300px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581041342455_file.png) 
 
+<!-- ## Bluetooth Beacon Service
+![bg right:70% h:300px](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581041342455_file.png)  -->
 
 ## MakeCode Setup: Extensions → select bluetooth
 To enable Bluetooth communication on the micro:bit click “Extentions” menu and select blutooth services.  
@@ -68,11 +73,6 @@ To enable Bluetooth communication on the micro:bit click “Extentions” menu a
   <img src="https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1580927592964_file.png" height="400px" /> 
 </p>
 
-<!-- **[SAD NEWS 😥] The Bluetooth library cannot be used in conjunction with the Neopixel or Radio libraries.** -->
-
-# Bluetooth with Neopixel Code
-https://makecode.microbit.org/_CUadKdVArC0J
-
 
 ## [BLE: micro:bit → p5*js]: Control video playback with micro:bit gesture.
 
@@ -82,7 +82,6 @@ Glitch preview: https://ubit-ble-video-gesture.glitch.me
 
 <!-- 
 https://www.youtube.com/watch?v=mEeEzyQEegc& -->
-
 
 
 ## Step01: micro:bit gesture input code**
@@ -98,8 +97,26 @@ micro:bit code: https://makecode.microbit.org/_005Ew2M1y7Ws
 
 https://www.youtube.com/watch?v=_h5O4mcL8Qk&
 
+## Step:03:  Load Web Bluetooth Library to p5*js
 
+1. Open “index.html” from Sketch Files:  and add following line above “sketch.js” link.
+This will allow p5 to use the micro:bit Web Bluetooth library.
 
+```html
+  <script src="https://nkymut.github.io/microbit-webble-p5js/ubitwebble.js"></script>
+```
+
+## Step:04:  Setup WebBluetooth Library
+
+ After setting up the library, instantiate a uBitWebBluetooth object on the micro:bit declared in the p5 global variable.
+
+```js
+  let microBit; //global variable
+
+  microBit = new uBitWebBluetooth(); //create microBit WebUSB instance
+```   
+
+<!-- 
 ## Step03: download and add microbit bluetooth library to Glitch. 
 
 **microBit bluetooth library:** [microBit.js](https://www.dropbox.com/s/ax9z7p5sd4je3yt/microBit.js?dl=1)
@@ -112,35 +129,59 @@ https://glitch.com/edit/#!/p-5-video-gesture
     
 3-2. Upload “microBit.js” file to the sketch folder.
 
-![bg right:30% h:300px](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612471931230_image.png)
+![bg right:30% h:300px](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612471931230_image.png) 
 
 
 3-3. Add link to the script file in index.html
 ```html
-<script src="./microBit.js"></script>
-```
+<script src="./microBit.js"></script>```
+-->
 
 <!-- ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612472102485_image.png) -->
 
 
-## Step:04:  Add “Connect”/”Disconnect” Buttons to the sketch.js 
+## Step:05:  Add “Connect”/”Disconnect” Buttons to the sketch.js 
 
 4-1. Declare button objects and set following callback functions.
-    - connectBle : connect to the micro:bit BLE
-    - disconnectBle : disconnect from the micro:bit BLE
+    - connectDevice : connect to the micro:bit BLE
+    - disconnectDevice : disconnect from the micro:bit BLE
 
 ```js
- //define connect and disconnect buttons
-  const connectButton = createButton("Connect");
-  connectButton.mousePressed(connectBle);
-
-  const disconnectButton = createButton("Disconnect");
-  disconnectButton.mousePressed(disconnectBle);
+/* Inside setup()*/
+//add connect button
+connectBtn = createButton("connect");
+connectBtn.mousePressed(function(){
+  microBit.connectDevice
+  });
+//add disconnect button
+disconnectBtn = createButton("disconnect");
+disconnectBtn.mousePressed(function(){
+  microBit.disconnectDevice()
+  });
 ```
 <!-- ![h:300px](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612472341219_Screenshot+2021-02-05+at+4.57.02+AM.png) -->
 
+## Step:06:  Add “Connect”/”Disconnect and onReceiveSerial Callback functions.
 
-## Step:05:  Add  handleBleData() function to handle incoming data from micro:bit**
+```js
+  //inside setup() function.
+
+  //onConnect happens when microBit is connected.
+  microBit.onConnect(function(){
+    console.log("connected");
+  });
+
+  //onDisconnect happens when microBit is disconnected.
+  microBit.onDisconnect(function(){
+    console.log("disconnected");
+  });
+
+  //onReceiveSerial happens when microBit receive serial data.
+  microBit.onReceiveSerial( handleData );
+
+```
+
+## Step:07:  Define  handleData() callback function to handle incoming data from micro:bit
 
 <!-- ![h:500](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612472452553_Screenshot+2021-02-05+at+5.00.26+AM.png)  -->
 
@@ -148,7 +189,7 @@ https://glitch.com/edit/#!/p-5-video-gesture
 //handleBleData event function will be called 
 //when the bluetooth data is received.
 
-function handleBleData(data) {
+function handleData(data) {
   
   let status = data;
 
@@ -187,7 +228,7 @@ function handleBleData(data) {
 <iframe allow="bluetooth" src="https://ubit-ble-video-gesture.glitch.me/"> </iframe> -->
 
 
-## Step06:  connect & select your micro:bit’s **BLE ID**
+## Step08:  connect & select your micro:bit’s **BLE ID**
 https://ubit-ble-video-gesture.glitch.me/
 
 Every micro:bit has an unique **BLE ID** (e.g **gupez**) to identify which micro:bit you are connecting to.  Look up your ID for a paper inside your micro:bit kit.
@@ -210,3 +251,9 @@ https://www.youtube.com/watch?v=SjQ9a7tTLgU& -->
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612467930397_Screenshot+2021-02-05+at+3.45.19+AM.png) | ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612473450332_image.png) |
 
+
+
+## [BLE: p5*js -> micro:bit] Control Neopixel Color from p5.js
+<!-- **[SAD NEWS 😥] The Bluetooth library cannot be used in conjunction with the Neopixel or Radio libraries.** -->
+
+https://makecode.microbit.org/_CUadKdVArC0J

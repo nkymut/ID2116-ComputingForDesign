@@ -110,7 +110,7 @@ p5*js code: https://editor.p5js.org/didny/sketches/_P18rzj9
 This will allow p5 to use the micro:bit webusb library.
 
 ```html
-  <script language="javascript" type="text/javascript" src="https://nkymut.github.io/microbit-webusb-p5js/ubitwebusb.js"></script>
+  <script src="https://nkymut.github.io/microbit-webusb-p5js/ubitwebusb.js"></script>
 ```
 
   ![](./assets/p5-js-webusb.png)
@@ -126,7 +126,7 @@ This will allow p5 to use the micro:bit webusb library.
 
 ![center w:1150px ](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030254298_file.png) -->
 
-## Step:03:  Setup webUSB Library
+## Step:03:  Setup WebUSB Library
 
  After setting up the library, instantiate a uBitWebUSB object on the micro:bit declared in the p5 global variable.
 
@@ -143,29 +143,54 @@ Next, create buttons for connecting/disconnecting to the micro:bit.
 /* Inside setup()*/
 //add connect button
 connectBtn = createButton("connect");
-connectBtn.mousePressed(connect);
+connectBtn.mousePressed(function(){microBit.connectDevice();});
+
 //add disconnect button
 disconnectBtn = createButton("disconnect");
-disconnectBtn.mousePressed(disconnect);
+disconnectBtn.mousePressed(function(){microBit.disconnectDevice();});
 ```
 
-## Step:05:  Add “Connect”/”Disconnect” callback functions.
+## Step:05:  Add “Connect”/”Disconnect Callback functions.
 
 ```js
-/* somewhere in the sketch */
-//connect to microBit
-function connect() {
-  microBit.connectDevice();
-}
+  //inside setup() function.
 
-//disconnect from microBit
-function disconnect() {
-  microBit.disconnectDevice();
-}
+  //onConnect happens when microBit is connected.
+  microBit.onConnect(function(){
+    console.log("connected");
+  });
+
+  //onDisconnect happens when microBit is disconnected.
+  microBit.onDisconnect(function(){
+    console.log("disconnected");
+  });
 
 ```
 <!-- 
 ![](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581030545249_file.png) -->
+
+## Callback Function
+
+
+![bg right fit](./assets/callback_comparision.png)
+
+
+```js  
+//happens when a mouse button is pressed.
+function mousePressed() {
+  //switch on the bulb
+  bulb.on();
+}
+
+//happens when a serial data is received.
+microBit.onReceiveSerial(
+   function(receivedData){
+    let val = int(receivedData);
+    bulb.brightness = val;
+    
+    fadeSlider.value(bulb.brightness);
+  });
+```
 
 
 ## Step:06:  Add callback function to handle incoming data from micro:bit

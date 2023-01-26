@@ -9,7 +9,7 @@ size: 16:9
 ---
 <!-- color: black -->
 
-# AY2021 ID2116 Wk03: <br>Object,<br>Object Oriented Programming,<br>State Transition
+# ID2116 Week03: <br>Object,<br>Object Oriented Programming,<br>State Transition
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">
 
@@ -19,13 +19,13 @@ size: 16:9
 
 
 
-# Schedule:
+<!-- # Schedule:
 
 - Object Oriented Programming
     - JavaScript Object: 
     - Class
 - Designing Behaviour of Algorithmic Agent
-    - State Transition Diagram
+    - State Transition Diagram -->
 
 # Mid-Term Project: ”Algorithmic Agent”
 

@@ -9,7 +9,7 @@ size: 16:9
 ---
 <!-- color: black -->
 
-# AY2021 ID2116 Wk04: <br>Object,<br>Object Oriented Programming,<br>State Transition
+# AY2021 ID2116 Wk03: <br>Object,<br>Object Oriented Programming,<br>State Transition
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">
 
@@ -26,11 +26,6 @@ size: 16:9
     - Class
 - Designing Behaviour of Algorithmic Agent
     - State Transition Diagram
-   
-- Connecting micro:bit ↔ p5*js 
-    - [Web USB](https://nkymut.github.io/ID2116-AY22/wk4/ID2116_Wk04_microbit_p5.html)
-    - [BlueTooth](https://nkymut.github.io/ID2116-AY22/wk4/ID2116_Wk04_microbit_ble.html)
-
 
 # Mid-Term Project: ”Algorithmic Agent”
 
@@ -175,7 +170,7 @@ How can you describe the relationship of methods to properties?
 ![bg right h:200px](https://paper-attachments.dropbox.com/s_9E70C909006960263956C0A3D9E0398CFDF969BA8AFF813E89F24E05F6366B84_1581014907083_image.png)
 
 
-## [Wk04 Exercise] Define a daily object as a JavaScript Object
+## [Wk03 Exercise] Define a daily object as a JavaScript Object
 - Analyze the everyday object you brought today and extract its properties and methods.
 Write them down as a JavaScript object as the following example. 
 

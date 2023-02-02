@@ -26,7 +26,7 @@
   color: #020202;
 }
 ;--marpit-advanced-background-split:25%;" data-size="16:9" data-marpit-advanced-background="content" data-marpit-advanced-background-split="left">
-<h1>AY2021 ID2116 Wk04:<br /> micro:bit <img class="emoji" draggable="false" alt="↔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2194.svg" data-marp-twemoji=""/> p5*js communication<br />Web Bluetooth</h1>
+<h1>ID2116 Wk04:<br /> micro:bit <img class="emoji" draggable="false" alt="↔" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/2194.svg" data-marp-twemoji=""/> p5*js communication<br />Web Bluetooth</h1>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css" />
 </section>
@@ -242,7 +242,7 @@ This will allow p5 to use the micro:bit Web Bluetooth library.</li>
 <p>After setting up the library, instantiate a uBitWebBluetooth object on the micro:bit declared in the p5 global variable.</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js">  <span class="hljs-keyword">let</span> microBit; <span class="hljs-comment">//global variable</span>
 
-  microBit = <span class="hljs-keyword">new</span> <span class="hljs-title function_">uBitWebBluetooth</span>(); <span class="hljs-comment">//create microBit WebUSB instance</span>
+  microBit = <span class="hljs-keyword">new</span> <span class="hljs-title function_">uBitWebBluetooth</span>(); <span class="hljs-comment">//create microBit WebBluetooth instance</span>
 </code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-heading-divider="2" data-style="h1 {
@@ -256,13 +256,13 @@ This will allow p5 to use the micro:bit Web Bluetooth library.</li>
 ;" data-size="16:9">
 <h2>Step:05:  Add “Connect”/”Disconnect” Buttons to the sketch.js</h2>
 <p>4-1. Declare button objects and set following callback functions.<br />
-- connectDevice : connect to the micro:bit BLE<br />
-- disconnectDevice : disconnect from the micro:bit BLE</p>
+- <code>microBit.connectDevice()</code> : connect to the micro:bit BLE<br />
+- <code>microBit.disconnectDevice()</code> : disconnect from the micro:bit BLE</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-comment">/* Inside setup()*/</span>
 <span class="hljs-comment">//add connect button</span>
 connectBtn = <span class="hljs-title function_">createButton</span>(<span class="hljs-string">&quot;connect&quot;</span>);
 connectBtn.<span class="hljs-title function_">mousePressed</span>(<span class="hljs-keyword">function</span>(<span class="hljs-params"></span>){
-  microBit.<span class="hljs-property">connectDevice</span>
+  microBit.<span class="hljs-title function_">connectDevice</span>()
   });
 <span class="hljs-comment">//add disconnect button</span>
 disconnectBtn = <span class="hljs-title function_">createButton</span>(<span class="hljs-string">&quot;disconnect&quot;</span>);
@@ -280,7 +280,7 @@ disconnectBtn.<span class="hljs-title function_">mousePressed</span>(<span class
   color: #020202;
 }
 ;" data-size="16:9">
-<h2>Step:06:  Add “Connect”/”Disconnect and onReceiveSerial Callback functions.</h2>
+<h2>Step:06:  Add <code>onConnect</code>/<code>onDisconnect</code> and <code>onReceiveSerial</code> Callback functions.</h2>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js">  <span class="hljs-comment">//inside setup() function.</span>
 
   <span class="hljs-comment">//onConnect happens when microBit is connected.</span>

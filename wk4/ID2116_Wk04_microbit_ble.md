@@ -15,7 +15,7 @@ style: |
 
 
 ---
-# AY2021 ID2116 Wk04:<br> micro:bit ↔ p5*js communication<br>Web Bluetooth
+# ID2116 Wk04:<br> micro:bit ↔ p5*js communication<br>Web Bluetooth
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">
 
@@ -113,7 +113,7 @@ This will allow p5 to use the micro:bit Web Bluetooth library.
 ```js
   let microBit; //global variable
 
-  microBit = new uBitWebBluetooth(); //create microBit WebUSB instance
+  microBit = new uBitWebBluetooth(); //create microBit WebBluetooth instance
 ```   
 
 <!-- 
@@ -143,15 +143,15 @@ https://glitch.com/edit/#!/p-5-video-gesture
 ## Step:05:  Add “Connect”/”Disconnect” Buttons to the sketch.js 
 
 4-1. Declare button objects and set following callback functions.
-    - connectDevice : connect to the micro:bit BLE
-    - disconnectDevice : disconnect from the micro:bit BLE
+    - `microBit.connectDevice()` : connect to the micro:bit BLE
+    - `microBit.disconnectDevice()` : disconnect from the micro:bit BLE
 
 ```js
 /* Inside setup()*/
 //add connect button
 connectBtn = createButton("connect");
 connectBtn.mousePressed(function(){
-  microBit.connectDevice
+  microBit.connectDevice()
   });
 //add disconnect button
 disconnectBtn = createButton("disconnect");
@@ -161,7 +161,7 @@ disconnectBtn.mousePressed(function(){
 ```
 <!-- ![h:300px](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612472341219_Screenshot+2021-02-05+at+4.57.02+AM.png) -->
 
-## Step:06:  Add “Connect”/”Disconnect and onReceiveSerial Callback functions.
+## Step:06:  Add `onConnect`/`onDisconnect` and `onReceiveSerial` Callback functions.
 
 ```js
   //inside setup() function.

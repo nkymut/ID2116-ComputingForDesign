@@ -17,7 +17,7 @@ style: |
 ---
 
 
-# AY2021 ID2116 Wk04:<br> micro:bit ↔ p5*js communication
+# ID2116 Wk04:<br> micro:bit ↔ p5*js communication
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">

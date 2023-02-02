@@ -264,11 +264,11 @@ p5.js has the following data conversion functions.
 
 ## [USB: p5.js → micro:bit] Control micro:bit LED with p5.js slider value 
 
-**microbit code:** https://makecode.microbit.org/31374-29890-38666-61410
+**microbit code:** https://makecode.microbit.org/_iTpUA3CVsA4E
 **p5*js code:** https://editor.p5js.org/didny/sketches/CoIoFM3B
 
 
-![bg right h:200px vertical](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612463555198_Screenshot+2021-02-05+at+2.32.18+AM.png) 
+![bg right h:350px vertical](./assets/microbitReceiveSerial.png) 
 <!-- ![bg right h:350px](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612467621932_Screenshot+2021-02-05+at+3.40.07+AM.png)  -->
 
 #

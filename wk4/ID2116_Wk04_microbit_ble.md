@@ -24,7 +24,7 @@ style: |
 # [BLE] Bluetooth Communication with micro:bit
 
 
-MicroBits have a bluetooth feature that allows wireless communication with laptops and mobile devices. [Web Bluetooth library]([https://nkymut.github.io/microbit-webble-p5js/](https://nkymut.github.io/microbit-webble-p5js/)) allows  allows p5.js sketches to connect to the MicroBits via Web browser. 
+MicroBits have a bluetooth feature that allows wireless communication with laptops and mobile devices. [Web Bluetooth library]([https://nkymut.github.io/microbit-webble-p5js/](https://nkymut.github.io/microbit-webble-p5js/)) allows p5.js sketches to connect to the MicroBits via Web browser. 
 
 
 # 

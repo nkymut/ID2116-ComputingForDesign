@@ -191,7 +191,7 @@ disconnectBtn.mousePressed(function(){
 
 function handleData(data) {
   
-  let status = data;
+   let status = data.trim(); // trim() removes newline "\n" caracter 
 
   if (gestureStatus !== status) { //check if status is different from previous
 
@@ -253,7 +253,8 @@ https://www.youtube.com/watch?v=SjQ9a7tTLgU& -->
 
 
 
-## [BLE: p5*js -> micro:bit] Control Neopixel Color from p5.js
+<!-- ## [BLE: p5*js -> micro:bit] Control Neopixel Color from p5.js
 <!-- **[SAD NEWS 😥] The Bluetooth library cannot be used in conjunction with the Neopixel or Radio libraries.** -->
 
-https://makecode.microbit.org/_CUadKdVArC0J
+<!-- https://makecode.microbit.org/_CUadKdVArC0J  -->
+

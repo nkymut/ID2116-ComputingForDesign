@@ -251,6 +251,16 @@ https://www.youtube.com/watch?v=SjQ9a7tTLgU& -->
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612467930397_Screenshot+2021-02-05+at+3.45.19+AM.png) | ![](https://paper-attachments.dropbox.com/s_AB7F35483D6E6EA631555F22D997E77073B2BD679AA90C5B33750719AE83C966_1612473450332_image.png) |
 
+## [BLE: micro:bit → p5*js]: State Transition
+
+**micro:bit code:** https://makecode.microbit.org/_H6iKck76u61h
+
+**Glitch code:** https://glitch.com/edit/#!/ubit-state-transition?path=sketch.js%3A1%3A0
+
+**Glitch Preview:** https://ubit-state-transition.glitch.me/
+
+![bg right:40%  ](./assets/butteflySTM.png)
+
 
 
 <!-- ## [BLE: p5*js -> micro:bit] Control Neopixel Color from p5.js

@@ -266,9 +266,10 @@ micro:bit code: https://makecode.microbit.org/_YEhYEcd7b0aF
 
 
 micro:bit code: https://makecode.microbit.org/83044-76777-39165-56605
-p5.js code: https://editor.p5js.org/didny/sketches/cTFjpyKd
+p5.js WebUSB code: https://editor.p5js.org/didny/sketches/cTFjpyKd
 
-
+p5.js WebBLE code:
+https://glitch.com/edit/#!/id2116-ble-neopixel?path=sketch.js%3A26%3A33
 
 <!-- -
 ---
@@ -330,10 +331,11 @@ send() function sends the data as a string with new line character . <br>
 microbit code: 
 https://makecode.microbit.org/_RiFTMKbEcXyX
 
-p5.js code:
+p5.js WebUSB code:
 https://editor.p5js.org/didny/sketches/J5QhGO9TB
 
-
+p5.js WebBLE code:
+https://glitch.com/edit/#!/id2116-ble-p5play?path=sketch.js%3A33%3A106
 
 <iframe style="width:401px; height:470px; margin: 191px 0px 50px 60%;" src="https://editor.p5js.org/didny/full/J5QhGO9TB"></iframe>
 

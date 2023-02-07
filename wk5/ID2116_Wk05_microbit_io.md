@@ -11,7 +11,7 @@ size: 16:9
 <!-- color: black -->
 
 
-#  AY2021 ID2116 Wk05:<br> micro:bit I/O
+#  ID2116 Wk05:<br> micro:bit I/O
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">
@@ -258,7 +258,7 @@ micro:bit code: https://makecode.microbit.org/_YEhYEcd7b0aF
 
 
 
-# 04 [p5*js -> micro:bit] <br>Control Neopixel Color from p5.js  
+# 04 [p5*js -> micro:bit] <br>Control Neopixel from p5.js  
 
 
 ##   04-01: sample codes
@@ -283,7 +283,7 @@ p5.js code: https://editor.p5js.org/didny/sketches/cTFjpyKd
 
 
 # p5*js Code:  Sending multiple values
-![bg right fit](https://paper-attachments.dropbox.com/s_EA31771E711951B20C00D2E226C1EB5563480D07E4B4D3A947FC87C420AE3881_1581035726666_file.png)     
+![bg right fit](./assets/sendDataFromp5.png)     
 
 
 sliderInput() function reads slider values and format data using “,” comma as delimiter. . <br>
@@ -342,7 +342,7 @@ https://editor.p5js.org/didny/sketches/J5QhGO9TB
 ## 05-01 Handling Actions
 
 ```js
-function handleUsbData(data){
+function handleData(data){
  
   // set incoming message to actionVal
   let actionVal  = data.trim(); 
@@ -423,18 +423,19 @@ and set animations to the sprite using "state" labels with [addAnimation()](http
 
 
 ## Setting up [p5.play](http://molleindustria.github.io/p5.play/)
-1. Download [p5.play.js](https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js) and upload the .js file to the p5 web editor
+<!-- 1. Download [p5.play.js](https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js) and upload the .js file to the p5 web editor -->
    
-2. Add a following line to “index.html” to enable p5.play.js.
+1. Add following lines to “index.html” to enable p5.play.js.
 
 ```html
-    <script src="./p5.play.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/planck@latest/dist/planck.min.js"></script>
+   <script src="https://p5play.org/v3/p5.play.js"></script>
 ```
 
 ## more resources on p5.play
 
-#### Making Games with p5.play
-https://creative-coding.decontextualize.com/making-games-with-p5-play/
+#### How to load animations
+https://p5play.org/learn/sprite_animation.html
 
 #### p5.play examples
 https://molleindustria.github.io/p5.play/examples/index.html
@@ -514,7 +515,7 @@ Sensor                     Output
 [Liquid Flow sensor](https://www.instructables.com/How-to-Use-Water-Flow-Sensor-Arduino-Tutorial/)                  
  -->
 
-
+<!-- 
 # Using gif animation 
 
 ### p5.gif.js library
@@ -544,7 +545,7 @@ function draw() {
 ```html
     <script src="./p5.gif.js"></script>
 ```
-
+ -->
 
 # Touch Sensor (micro:bit v2 only)
 

@@ -11,7 +11,7 @@ size: 16:9
 <!-- color: black -->
 
 
-#  AY2021 ID2116 Wk06: Algorithmic Agent Demo Day
+#  ID2116 Wk06: Algorithmic Agent Demo Day
 
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
 <link rel="stylesheet" href="../css/slidetemplate.css">
@@ -52,18 +52,16 @@ Design and code an algorithmic agent using p5.js that you can interact with a mi
 
 # Best(Voted) Project
 
-### Group-A: Foam Finidng
-Keng Wei & Stacy
-### Group-B: Noob Cook
-Sheryl & Grace & Ananya
+### Group-A: 
 
+### Group-B: 
 
 
 
 # Submission:
 
 ### Submission Form (Due: 23:59 18/02/2022)
-https://forms.gle/yw483eaULNi2RGnB9
+
 - Link of video demo of algorithmic agent interactions uploaded to a streaming platform
 - Link to p5.js and micro:bit code
 - Link recording excerpt of the demo session.

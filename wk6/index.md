@@ -52,9 +52,12 @@ Design and code an algorithmic agent using p5.js that you can interact with a mi
 
 # Best(Voted) Project
 
-### Group-A: 
+### Group-A: J & J
+JEROME JIMMY WONG & HUANG KAI XING
 
-### Group-B: 
+### Group-B: whare
+WONG HE KAI & ZOE KWOK ZIYI
+
 
 
 
